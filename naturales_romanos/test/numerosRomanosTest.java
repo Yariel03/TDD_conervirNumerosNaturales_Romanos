@@ -59,5 +59,40 @@ public class numerosRomanosTest {
         String romano=numRomanos.convertirAromanos(3);
         assertEquals(romano, "III");
     }
+    @Test
+    public void pasar4aRomano(){
+        String romano=numRomanos.convertirAromanos(4);
+        assertEquals(romano, "IV");
+    }
+    @Test
+    public void pasar5aRomano(){
+        String romano=numRomanos.convertirAromanos(5);
+        assertEquals(romano, "V");
+    }
+    @Test
+    public void pasar6aRomano(){
+        String romano=numRomanos.convertirAromanos(6);
+        assertEquals(romano, "VI");
+    }
+    @Test
+    public void pasar7aRomano(){
+        String romano=numRomanos.convertirAromanos(7);
+        assertEquals(romano, "VII");
+    }
+    @Test
+    public void pasar8aRomano(){
+        String romano=numRomanos.convertirAromanos(8);
+        assertEquals(romano, "VIII");
+    }
+    @Test
+    public void pasar9aRomano(){
+        String romano=numRomanos.convertirAromanos(9);
+        assertEquals(romano, "IX");
+    }
+    @Test
+    public void pasar10aRomano(){
+        String romano=numRomanos.convertirAromanos(10);
+        assertEquals(romano, "X");
+    }
 
 }

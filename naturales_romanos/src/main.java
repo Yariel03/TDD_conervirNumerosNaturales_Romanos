@@ -11,8 +11,8 @@
 public class main {
     public static void main (String [ ] args) {
         ClnumeroRomanos numRomanos=new ClnumeroRomanos();
-        //Convierte números naturales a romanos del 1 al 3
-        System.out.println(numRomanos.convertirAromanos(1));
+        //Convierte números naturales a romanos del 1 al 8
+        System.out.println(numRomanos.convertirAromanos(8));
 
         }
 }
