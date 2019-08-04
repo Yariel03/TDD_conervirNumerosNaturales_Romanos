@@ -23,27 +23,18 @@ class ClnumeroRomanos {
                 return "X";
         }
         if (numeroNatural < 4) {
-            return aumentarI(numeroNatural);
+            return aumentarI(numeroNatural, 1, "");
         }
         if (numeroNatural < 9) {
-            return aumentarV(numeroNatural);
+            return aumentarI(numeroNatural, 6, "V");
         }
         return null;
     }
-    private String aumentarI(int numeroNatural){
-        String resultado="";
-        for (int i = 1; i <= numeroNatural; i++) {
-            resultado+="I";
-        }
-        return resultado;
-    }
 
-    private String aumentarV(int numeroNatural){
-        String resultado="V";
-        for (int i = 6; i <= numeroNatural; i++) {
-            resultado+="I";
+    private String aumentarI(int numeroNatural, int inicio, String letra) {
+        for (int i = inicio; i <= numeroNatural; i++) {
+            letra += "I";
         }
-        return resultado;
+        return letra;
     }
-
 }
